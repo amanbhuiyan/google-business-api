@@ -43,3 +43,5 @@ def get_businesses_without_reviews(request, city_name):
 
 
     return JsonResponse({'count': len(businesses_without_reviews) , 'businesses': businesses_without_reviews})
+
+## some changes here to test
