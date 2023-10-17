@@ -19,7 +19,7 @@ def get_businesses_without_reviews(request, city_name):
     base_url = "https://maps.googleapis.com/maps/api/place/textsearch/json"
     response = requests.get(base_url, params=params)
     data = response.json()
-    print(data)
+    # print(data)
 
     businesses_without_reviews = []
 
@@ -45,3 +45,4 @@ def get_businesses_without_reviews(request, city_name):
     return JsonResponse({'count': len(businesses_without_reviews) , 'businesses': businesses_without_reviews})
 
 ## some changes here to test
+## commit- 3--another changes.-
