@@ -1,6 +1,6 @@
 
 
-release: python googleBusinessProject/manage.py makemigrations --no-input
-release: python googleBusinessProject/manage.py migrate --no-input
+release: python googleBusinessProject/manage.py makemigrations
+release: python googleBusinessProject/manage.py migrate
 
 web: gunicorn googleBusinessProject.googleBusinessProject.wsgi
