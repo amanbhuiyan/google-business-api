@@ -38,33 +38,7 @@ def get_businesses_without_reviews(request, city_name):
     for key, value in data.items():
         print(key)
 
-    '''
-    print(data['results'][0])
-    print('\n')
-    print(data['results'][1])
-    print('\n')
-    print(data['results'][2])
-    print('\n')
-    print(data['results'][3])
-    print('\n')
-    print(data['results'][4])
-    print('\n')
-    print(data['results'][5])
-    print('\n')
-    print(data['results'][6])
-    print('\n')
-    print(data['results'][7])
-    print('\n')
-    print(data['results'][8])
-    print('\n')
-    print(data['results'][9])
-    print('\n')
-    print(data['results'][10])
-    print('\n')
-    print(data['results'][11])
 
-
-    '''
     businesses_without_reviews = []
 
     if data.get("status") == "OK":
@@ -108,29 +82,8 @@ def get_businesses_based_on_ratings(request, city_name, ratinginput):
     # print(data)
     for key, value in data.items():
         print(key)
-    print(data['results'][0])
-    print('\n')
-    print(data['results'][1])
-    print('\n')
-    print(data['results'][2])
-    print('\n')
-    print(data['results'][3])
-    print('\n')
-    print(data['results'][4])
-    print('\n')
-    print(data['results'][5])
-    print('\n')
-    print(data['results'][6])
-    print('\n')
-    print(data['results'][7])
-    print('\n')
-    print(data['results'][8])
-    print('\n')
-    print(data['results'][9])
-    print('\n')
-    print(data['results'][10])
-    print('\n')
-    print(data['results'][11])
+
+
 
     businesses_with_specific_rating = []
 
