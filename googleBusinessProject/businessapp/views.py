@@ -2,11 +2,20 @@ from django.http import JsonResponse
 from .models import Business
 import requests
 
+import os
+from dotenv import find_dotenv , load_dotenv
+
 #from .serializers import BusinessSerializer
 
 def get_businesses_without_reviews(request, city_name):
 
-    google_api_key = "AIzaSyARKFsoUxIKkH3To8T6wY3E2F7AQGqeLd8"
+    dotenv_path = find_dotenv()
+    print(dotenv_path)
+
+
+    print(load_dotenv(dotenv_path))
+
+    google_api_key = os.getenv("google_api_key")
 
 
     query = f"businesses in {city_name}"
